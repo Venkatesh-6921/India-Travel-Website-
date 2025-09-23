@@ -1,0 +1,240 @@
+/* Reset some styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container class to center content and limit width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+ @media (max-width: 600px) {
+    .navbar ul {
+      flex-direction: column;     /* Stack vertically */
+      align-items: flex-start;    /* Align to the left */
+      border: 1px solid #ccc;     /* Make it box-like */
+      padding: 10px;
+      background-color: #444;
+    }
+
+    .navbar li {
+      width: 100%;               /* Make li take full width */
+      border-bottom: 1px solid #666;
+    }
+
+    .navbar li:last-child {
+      border-bottom: none;
+    }
+}
+
+/* Header */
+.site-header {
+  background:#333;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional for visual separation */
+}
+
+.site-header .logo a {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header .site-nav ul {
+  list-style: none;
+ text-align: center;
+
+
+  
+}
+
+.site-header .site-nav ul li {
+  margin-left: 20px;
+   display: inline-block;
+   padding-bottom:20px;
+  
+}
+
+.site-header .site-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  
+  
+}
+
+.site-header .site-nav ul li a:hover {
+  color: #0080ff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('Images/taj.jpg') no-repeat center center/cover;
+  color: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  padding-top: 230px;
+  
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+ 
+}
+
+.btn {
+  display: inline-block;
+  background: #0066cc;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #004999;
+}
+
+/* Features / Destination Cards */
+.features {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 15px;
+}
+
+/* Tours Section */
+.tours {
+  padding: 50px 0;
+}
+
+.tours h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tour-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+.tour-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tour-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 20px;
+}
+
+.tour-info h3 {
+  margin-bottom: 10px;
+}
+
+.tour-info p {
+  margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+.site-footer {
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
