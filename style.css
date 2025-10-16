@@ -246,6 +246,7 @@ body {
   text-decoration: underline;
 }
 
+
 /*button in another page*/
 .button-middle {
   border-radius: 5px;
@@ -270,4 +271,8 @@ body {
 .button-middle:hover {
   transform: scale(1.1);         
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.about.container ul li{
+  list-style-type:none;
 }
