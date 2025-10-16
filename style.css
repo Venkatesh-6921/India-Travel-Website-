@@ -273,6 +273,6 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-.about.container ul li{
-  list-style-type:none;
+.list {
+  list-style-type: none;
 }
